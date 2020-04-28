@@ -17,6 +17,7 @@ if musica=="si":
 else:
     print("Bueno, al menos es un comienzo. Veremos qué se puede hacer contigo.")
 print("\n")
+
 print("Felicitación de Cumpleaños")
 i=1
 while i != edad:
@@ -28,3 +29,19 @@ for i in range(1,edad):
     print("Que no cumple ",i)
 i=i+1
 print("¡Qué si cumple",i,"!")
+print("\n")
+
+usuario=[nombre,edad,musica]
+for dato in usuario:
+    print(dato)
+print("\n")
+
+usuario={
+        "nombre":nombre,
+        "edad":edad,
+        "musica":musica
+        }
+
+for dato in usuario.values():
+    print(dato)
+    
