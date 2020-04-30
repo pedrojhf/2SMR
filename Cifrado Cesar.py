@@ -19,6 +19,7 @@ def cifracesar(texto_claro,clave):
         letra_cifrada = int(nueva_posicion) % len(abecedario)
         texto_cifrado = texto_cifrado + str(abecedario[letra_cifrada])
     return texto_cifrado
+
 cifrado=cifracesar(texto_claro,clave)
 print("\nEl mensaje descifrado es:",cifrado)   
 
@@ -32,5 +33,6 @@ def descifracesar(texto_cifrado,clave):
         texto_descifrado = texto_descifrado + str(abecedario[letra_cifrada])
  
     return texto_descifrado
+
 descifrado=descifracesar(cifrado,clave)
 print("\nEl mensaje descifrado es:",descifrado)   
